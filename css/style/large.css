@@ -1,37 +1,65 @@
 body{
-    background-color: aquamarine;
-    font-size: 1.6rem;
-}
-.container{
-   justify-content: center;
-    
-}
-.appHeader, .appMain {
-    width: 1000px;    
-}
-
-.appNav, .appFooter {
-    width: 100%;
-}
-.appMain {
-    justify-content: space-between;
-}
-.book {
+    background-color: skyblue;
+    font-size: 1em;
+  }
+  .appHeader, .appMain{
+    margin: 0 auto;
+  }
+  .appHeader{
+    width: 1000px;
+    position: relative;
+  }
+  /* 로고 */
+  .brand{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 50%;
+    margin-top: -30px;
+  }
+  /* 검색 폼 */
+  .searchForm{
+    text-align: right;
+  }
+  input[name="search"]{
+    width: 400px;
+  }
+  .buttonSearch{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #988574;
+    color: #fff;
+    height: 35px;
+    vertical-align: middle;
+  }
+  
+  .appMain{
+    width: 1020px;
+  }
+  .appMain::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .book, .news, .board, .favorite, .twitter{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: 300px;
+  }
+  .book{
     width: 320px;
-    
-}
-.news {
+  }
+  .news{
     width: 660px;
-
-}
-.board {
+  }
+  .board{
     width: 320px;
-    
-}
-.tw {
-    width: 420px;
-}
-.favorite {
+  }
+  .favorite{
     width: 220px;
-    order:1;
-}
+    float: right;
+  }
+  .twitter{
+    width: 420px;
+  }

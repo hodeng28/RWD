@@ -1,31 +1,100 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>웹카페-RWD</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style/small.css"
-    media="screen and (max-width:999px)"> 
-    <link rel="stylesheet" href="css/style/large.css"
-    media="screen and (min-width: 1000px)">
+    <link rel="stylesheet" href="css/style/small.css" media="screen and (max-width:999px)">
+    <link rel="stylesheet" href="css/style/large.css" media="screen and (min-width: 1000px)">
 </head>
+
 <body>
     <div class="container">
-        <header class="appHeader">헤더</header>
-            <nav class="appNav">네비게이션</nav>
-        
+        <header class="appHeader resetMargin">
+            <h1 class="brand">
+                <a href="">
+                    <img class="responsive" src="./images/rwd-logo.png" alt="WebCafe로고"></a>
+            </h1>
+            <ul class="memberOnly resetList">
+                <li><a href="#">로그인</a></li>
+                <li><span aria-hidden="true"></span>|
+                    <a href="#">회원가입</a></li>
+                <li><span aria-hidden="true"></span>|
+                    <a href="#">커뮤니티</a></li>
+            </ul>
+            <form action="https://formspree.io/xyyzgpvy" method="POST" class="searchForm">
+                <fieldset class="resetBox">
+                    <legend>검색 폼</legend>
+                    <label for="search" class="a11yHidden">검색어</label>
+                    <input type="search" id="search" name="search" required placeholder="검색어를 입력하세요." /><button
+                        type="submit" class="button buttonSearch">검색</button>
+                </fieldset>
+            </form>
+        </header>
+        <nav class="appNavigation menu">
+            <h2 class="a11yHidden">메인메뉴</h2>
+            <button type="button" class="buttonNone buttonBurger" aria-label="메뉴 열기">
+                <span class="burgurBar round positionTop"></span>
+                <span class="burgurBar round positionMiddle"></span>
+                <span class="burgurBar round positionBottom"></span>
+            </button>
+            <ul class="menu__list resetList">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">HTML에 대해</a>
+                    <ul class="menu__submenu">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">CSS에 대해</a>
+                    <ul class="menu__submenu">
+                        <li><a href="#">HTML5 소개</a></li>
+                        <li><a href="#">래퍼런스 소개</a></li>
+                        <li><a href="#">활용 예제</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">웹표준/웹접근성</a>
+                    <ul class="menu__submenu">
+                        <li><a href="#">CSS 소개</a></li>
+                        <li><a href="#">CSS2 VS CSS3</a></li>
+                        <li><a href="#">CSS 애니메이션</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">묻고 답하기</a>
+                    <ul class="menu__submenu">
+                        <li><a href="#">묻고 답하기</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">1대1 질문</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">자료실</a>
+                    <ul class="menu__submenu">
+                        <li><a href="#">공개 자료실</a></li>
+                        <li><a href="#">이미지 자료실</a></li>
+                        <li><a href="#">예제 자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         <main class="appMain">
-            <section class="book">추천 서적</section>
+            <section class="book"><h2>
+                추천 서적
+            </h2></section>
             <section class="news">새소식</section>
             <section class="board">게시판</section>
             <section class="favorite">인기 사이트</section>
-            <article class="tw">트위터</article>
+            <article class="twitter">트위터</article>
         </main>
         <footer class="appFooter">
             푸터
         </footer>
     </div>
 </body>
+
 </html>

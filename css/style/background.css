@@ -3,15 +3,15 @@
 }
 .appHeader {
     background-color: yellow;
-    min-height: 15vh;
+    
 }
-.appNav {
+.appNavigation {
     background-color: tan;
-    min-height: 10vh;
+    
 }
 .appMain {
     background-color: darkblue;
-    min-height: 60vh;
+    
 }
 .book {
     background-color: orange;
@@ -26,10 +26,10 @@
 .favorite {
     background-color: lime;
 }
-.tw {
+.twitter {
     background-color: skyblue;
 }
 .appFooter {
     background-color: magenta;
-    min-height: 15vh;
+    
 }
