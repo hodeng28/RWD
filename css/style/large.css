@@ -1,6 +1,6 @@
 body{
     background-color: skyblue;
-    font-size: 1em;
+    font-size: 1.6em;
   }
   .appHeader, .appMain{
     margin: 0 auto;
@@ -8,6 +8,7 @@ body{
   .appHeader{
     width: 1000px;
     position: relative;
+    padding-bottom: 2rem;
   }
   /* 로고 */
   .brand{
@@ -32,7 +33,51 @@ body{
     height: 35px;
     vertical-align: middle;
   }
-  
+
+  /* 메인메뉴 */
+  .menu {
+    background-color: #988574;
+    padding: 3em 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttonBurger {
+    display: none;
+  }
+  .menu__list {
+    width: 1000px;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row nowrap;
+    color:white; 
+    margin:0 auto; 
+  }
+  .menu__link {
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 0 #000, -1px -1px #000;
+    font-weight: 900;
+    outline: 0;
+    cursor: default;
+
+  }
+  .menu__link
+  .menu__submenu {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    
+  }
+
+  .menu__submenu li {
+    margin-top: 1.5rem;
+  }
+  .menu__submenu a:hover {
+    color:yellow;
+  }
+
+
+
   .appMain{
     width: 1020px;
   }
