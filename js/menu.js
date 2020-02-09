@@ -3,6 +3,7 @@ const nav = document.querySelector('.appNavigation')
 const btn = nav.querySelector('.buttonBurger')
 const items = nav.querySelectorAll('.menu__item')
 const links = nav.querySelectorAll('.menu__link')
+const icons = document.querySelectorAll('.board_list a');
 
 // 상태 변수
 let mode = null
@@ -18,6 +19,10 @@ function render() {
   }
   // 모드가 변경되면, 모드의 상태 업데이트
   mode = isMobile
+  for (let i = 0; i < icons.length; i++) {
+    let icons = items[i]
+    item.classList.add('icon-icons')
+  }
 
   if (isMobile) {
     // 모바일 환경의 경우....
